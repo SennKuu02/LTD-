@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bgr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sb3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/elephant" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/dinosaur" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <SeekBar
+                android:id="@+id/sb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progressDrawable="@android:color/transparent"
+                android:thumb="@drawable/turtle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/animal" />
+
+    <TextView
+        android:id="@+id/txtDiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="100"
+        android:textColor="@color/teal_200"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/ibtPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="false"
+        android:background="@drawable/ic_play" />
+
+    <TextView
+        android:id="@+id/hovaten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="35dp"
+        android:text="Võ Thanh Hải"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+
+
