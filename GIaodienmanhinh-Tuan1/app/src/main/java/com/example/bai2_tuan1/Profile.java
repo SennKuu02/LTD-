@@ -18,13 +18,8 @@ public class Profile extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BackMain();
+                finish();
             }
         });
-    }
-
-    private void BackMain() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 }

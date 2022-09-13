@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient">
+    android:background="@drawable/background">
 
 
     <LinearLayout
@@ -24,7 +24,7 @@
             android:src="@drawable/ic_back" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewTaiKhoan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -32,7 +32,8 @@
             android:gravity="center_horizontal"
             android:text="Profile"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/textView6"
@@ -40,7 +41,7 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:src="@drawable/ic_settings"/>
+            android:src="@drawable/ic_settings" />
     </LinearLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -48,18 +49,20 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="50dp"
-        android:src="@drawable/doremon"
+        android:src="@drawable/phg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewMyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Võ Thanh Hải"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImageView2" />
@@ -72,7 +75,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMyName"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
@@ -84,21 +87,25 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewNumberFolower"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="1k"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
+                android:text="Follower"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:text="Follower" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -112,36 +119,39 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textViewNumberFriend"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="2k"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
+                android:text="Friend"
                 android:textColor="@color/black"
-                android:text="Friend" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="395dp"
         android:layout_height="221dp"
-        android:layout_marginTop="70dp"
-        android:background="@color/white"
+        android:layout_marginTop="52dp"
+        android:background="@color/cardview_light_background"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewEmail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -149,10 +159,11 @@
             android:gravity="left|center"
             android:text="Email:   thanhhaidn2002@gmail.com"
             android:textColor="@color/black"
-            android:textSize="17dp" />
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/textViewPhone"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -160,10 +171,11 @@
             android:gravity="left|center"
             android:text="Phone:  0908152508"
             android:textColor="@color/black"
-            android:textSize="17dp" />
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/textViewMSV"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -171,10 +183,11 @@
             android:gravity="left|center"
             android:text="MSV:    2050531200136"
             android:textColor="@color/black"
-            android:textSize="17dp" />
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textViewZalo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
@@ -182,7 +195,8 @@
             android:gravity="left|center"
             android:text="ZALO:   Võ Thanh Hải"
             android:textColor="@color/black"
-            android:textSize="17dp" />
+            android:textSize="17dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
