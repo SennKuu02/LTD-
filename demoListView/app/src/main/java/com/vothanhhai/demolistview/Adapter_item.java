@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -54,6 +55,14 @@ public class Adapter_item extends RecyclerView.Adapter<Adapter_item.UserViewHold
             }
 
 
+
+        });
+        holder.layoutItem.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Toast.makeText(mContext, "Bạn có muốn có xóa hay ko? Nếu Yes thì xóa. ", Toast.LENGTH_SHORT).show();
+                return false;
+            }
         });
     }
     private void onClickGoToDetail(User user) {

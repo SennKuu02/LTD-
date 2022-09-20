@@ -1,20 +1,28 @@
 package com.vothanhhai.demolistview;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    
     private RecyclerView rcvData;
     private Adapter_item adapter_item;
+    private Object RelativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
 
         adapter_item = new Adapter_item(this, getListUser());
         rcvData.setAdapter(adapter_item);
+
     }
+
 
     private List<User> getListUser() {
         List<User> list = new ArrayList<>();
