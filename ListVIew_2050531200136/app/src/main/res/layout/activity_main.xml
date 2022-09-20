@@ -89,6 +89,8 @@
         app:layout_constraintBottom_toTopOf="@+id/listviewMonHoc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        toRi
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
