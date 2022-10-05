@@ -10,15 +10,10 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     android:layout_marginTop="50dp"
-    tools:context=".MainActivity">
+    tools:context=".DanhBaActivity">
 
-    <Button
-        android:id="@+id/btn_doc"
-        android:textStyle="bold"
-        android:textSize="16dp"
+    <ListView
+        android:id="@+id/lv_danhba"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="xuLyMoManHinhDocDanhBa"
-        android:text="Đọc danh bạ điện thoại" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>
