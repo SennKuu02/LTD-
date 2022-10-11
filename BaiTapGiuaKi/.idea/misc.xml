@@ -8,11 +8,18 @@
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_home2.xml" value="0.25416666666666665" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_menu.xml" value="0.2" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_profite1.xml" value="0.24010416666666667" />
-        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_register.xml" value="0.24010416666666667" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_show_detail.xml" value="0.264" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/activity_sighup.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/fragment_setting.xml" value="0.25416666666666665" />
         <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/layout/menu_food_row_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/CODE/BaiTapGiuaKi/app/src/main/res/menu/menu_bottom_nav.xml" value="0.253125" />
       </map>
     </option>
   </component>
@@ -21,5 +28,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>

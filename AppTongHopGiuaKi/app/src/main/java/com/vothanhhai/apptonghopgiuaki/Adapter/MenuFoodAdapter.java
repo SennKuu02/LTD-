@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,66 +18,61 @@ import com.vothanhhai.apptonghopgiuaki.model.MenuFood;
 
 import java.util.List;
 
-public class MenuFoodAdapter extends RecyclerView.Adapter<MenuFoodAdapter.MenuFoodViewHolder> {
+public class MenuFoodAdapter extends BaseAdapter {
 
     Context context;
+    int layout;
     List<MenuFood> menuFoodList;
 
-    public MenuFoodAdapter(Context context, List<MenuFood> menuFoodList) {
+    public MenuFoodAdapter(Context context, int layout, List<MenuFood> menuFoodList) {
         this.context = context;
+        this.layout = layout;
         this.menuFoodList = menuFoodList;
     }
 
-    @NonNull
     @Override
-    public MenuFoodViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(context).inflate(R.layout.menu_food_row_item,parent,false);
-        return new MenuFoodViewHolder(view);
-
-    }
-
-    @Override
-    public int getItemCount() {
+    public int getCount() {
         return menuFoodList.size();
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MenuFoodViewHolder holder, int position) {
+    public Object getItem(int i) {
+        return null;
+    }
 
-        holder.foodImage.setImageResource(menuFoodList.get(position).getImageURL());
-        holder.name.setText(menuFoodList.get(position).getName());
-        holder.price.setText(menuFoodList.get(position).getPrice());
-        holder.rating.setText(menuFoodList.get(position).getRating());
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(context, DetailsActivity.class);
-                context.startActivity(i);
-            }
-        });
+    @Override
+    public long getItemId(int i) {
+        return 0;
     }
 
 
-
-    public static final class MenuFoodViewHolder extends RecyclerView.ViewHolder{
-
+    public class ViewHolder {
         ImageView foodImage;
         TextView price;
         TextView name;
         TextView rating;
-
-        public MenuFoodViewHolder(@NonNull View itemView) {
-            super(itemView);
-
-            foodImage = itemView.findViewById(R.id.image_food_item);
-            price = itemView.findViewById(R.id.tv_price);
-            name = itemView.findViewById(R.id.tv_name_food);
-            rating = itemView.findViewById(R.id.tv_rating);
-
-
-        }
     }
 
+    @Override
+    public View getView(int i, View view, ViewGroup viewGroup) {
+        ViewHolder holder;
+        if (view == null) {
+            LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            view = inflater.inflate(layout, null);
+            holder = new ViewHolder();
+            holder.foodImage = view.findViewById(R.id.image_food_item);
+            holder.price = view.findViewById(R.id.tv_price);
+            holder.name = view.findViewById(R.id.tv_name_food);
+            holder.rating = view.findViewById(R.id.tv_rating);
+            view.setTag(holder);
+        } else {
+            holder = (ViewHolder) view.getTag();
+        }
+        holder.foodImage.setImageResource(menuFoodList.get(i).getImageURL());
+        holder.name.setText(menuFoodList.get(i).getName());
+        holder.price.setText(menuFoodList.get(i).getPrice());
+        return view;
+    }
+
+    /////////////////
 }

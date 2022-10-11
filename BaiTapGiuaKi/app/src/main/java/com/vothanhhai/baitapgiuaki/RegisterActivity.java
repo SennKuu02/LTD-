@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class RegisterActivity extends AppCompatActivity {
+public class RegisterActivity extends LoginActivity {
 
     EditText edtUserName,edtPass, edtRePass;
     TextView tvLogin;

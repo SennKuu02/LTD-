@@ -47,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         if(edtUserName.getText().length() != 0 && edtUserName.getText().length() != 0){
             if(edtUserName.getText().toString().equals("thanhhai") && edtPass.getText().toString().equals("123")){
                 Toast.makeText(LoginActivity.this, "Bạn đã đăng nhập thành công", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, HomeActivity.class);
+                Intent intent = new Intent(this, MenuActivity.class);
                 startActivity(intent);
             }else {
                 Toast.makeText(LoginActivity.this, "Bạn đã đăng nhập sai tài khoản hoặc mật khẩu", Toast.LENGTH_SHORT).show();

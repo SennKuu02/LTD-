@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -46,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         menuRCView = findViewById(R.id.food_recycleview);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
         menuRCView.setLayoutManager(layoutManager);
-        menuFoodAdapter = new MenuFoodAdapter(this,menuFoodList);
-        menuRCView.setAdapter(menuFoodAdapter);
+        menuFoodAdapter = new MenuFoodAdapter(this,R.layout.menu_food_row_item,menuFoodList);
+        setListAdapter(menuFoodAdapter);
     }
 
 
